@@ -8,3 +8,18 @@ You can use the following events as normal BungeeCord events:
 - SonarCPSPeakChangedEvent
 - SonarIPSPeakChangedEvent
 - SonarBlacklistClearEvent
+
+Compatibilities:
+
+> Tested:
+  - Waterfall (https://papermc.io/downloads#Waterfall)
+  - Travertine (https://github.com/PaperMC/Travertine)
+  - FlameCord (https://github.com/2LStudios-MC/FlameCord)
+  - HexaCord (https://github.com/HexagonMC/BungeeCord)
+
+> Not tested:
+  - XCord (https://www.mc-market.org/resources/16843/)
+  - Aegis (https://mc-protection.eu/products)
+
+> Not compatible:
+  - Velocity (https://velocitypowered.com/)
