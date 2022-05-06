@@ -11,18 +11,29 @@ You can use the following events as normal BungeeCord events:
 - SonarIPSPeakChangedEvent
 - SonarBlacklistClearEvent
 
-Compatibilities:
+## Example event:
+
+```Java
+@EventHandler
+public void handle(final SonarReloadEvent) {
+    // do stuff
+}
+```
+
+## Compatibilities:
 
 > Tested:
-  - Waterfall (https://papermc.io/downloads#Waterfall)
-  - Travertine (https://github.com/PaperMC/Travertine)
-  - FlameCord (https://github.com/2LStudios-MC/FlameCord)
-  - HexaCord (https://github.com/HexagonMC/BungeeCord
-  - BungeeCord (https://ci.md-5.net/job/BungeeCord/)
+  * Waterfall (https://papermc.io/downloads#Waterfall)
+  * Travertine (https://github.com/PaperMC/Travertine)
+  * FlameCord (https://github.com/2LStudios-MC/FlameCord)
+  * HexaCord (https://github.com/HexagonMC/BungeeCord
+  * BungeeCord (https://ci.md-5.net/job/BungeeCord/)
 
 > Not tested:
-  - XCord (https://www.mc-market.org/resources/16843/)
-  - Aegis (https://mc-protection.eu/products)
+  * XCord (https://www.mc-market.org/resources/16843/)
+  * Aegis (https://mc-protection.eu/products)
 
 > Not compatible:
-  - Velocity (https://velocitypowered.com/)
+  * Velocity (https://velocitypowered.com/)
+
+Unlisted server software is **most likely not supported**!
