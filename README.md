@@ -15,7 +15,7 @@ You can use the following events as normal BungeeCord events:
 
 ```Java
 @EventHandler
-public void handle(final SonarReloadEvent) {
+public void handle(final SonarReloadEvent event) {
     // do stuff
 }
 ```
