@@ -14,7 +14,7 @@ import net.md_5.bungee.api.plugin.PluginManager;
 
 public final class TestAPI extends Plugin {
 
-    public static int lastCpsPeak, lastIpsPeak;
+    public static long lastCpsPeak, lastIpsPeak;
 
     @Override
     public void onEnable() {
