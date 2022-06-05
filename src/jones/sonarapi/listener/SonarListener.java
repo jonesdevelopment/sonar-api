@@ -5,7 +5,13 @@ import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 
-public class SonarListener implements Listener {
+/**
+ * @author jones
+ *
+ * @version 0.2
+ */
+
+public final class SonarListener implements Listener {
 
     /**
      *
@@ -73,7 +79,7 @@ public class SonarListener implements Listener {
      * @param toLog - Message that is getting logged to the console
      */
 
-    protected void log(final String toLog) {
+    private void log(final String toLog) {
         ProxyServer.getInstance().getLogger().info(toLog);
     }
 }
