@@ -25,7 +25,6 @@ public void handle(final SonarReloadEvent event) {
 
 > Tested:
   * Waterfall (https://papermc.io/downloads#Waterfall)
-  * Travertine (https://github.com/PaperMC/Travertine)
   * FlameCord (https://github.com/2LStudios-MC/FlameCord)
   * HexaCord (https://github.com/HexagonMC/BungeeCord
   * BungeeCord (https://ci.md-5.net/job/BungeeCord/)
