@@ -1,7 +1,11 @@
 This is an example BungeeCord plugin using the api.
 
+# How to use
+
 Add the Sonar.jar to your project libaries and you are finished.
 > You can find Sonar on MC-Market (https://www.mc-market.org/resources/23353/)
+
+# Events
 
 You can use the following events as normal BungeeCord events:
 
@@ -12,7 +16,7 @@ You can use the following events as normal BungeeCord events:
 - SonarIPSPeakChangedEvent
 - SonarBlacklistClearEvent
 
-## Example event:
+## Example event
 
 ```Java
 @EventHandler
@@ -21,7 +25,7 @@ public void handle(final SonarReloadEvent event) {
 }
 ```
 
-## Compatibilities:
+## Compatibilities
 
 > Tested:
   * Waterfall (https://papermc.io/downloads#Waterfall)
@@ -36,7 +40,7 @@ public void handle(final SonarReloadEvent event) {
 > Not compatible:
   * Velocity (https://velocitypowered.com/)
 
-> _Last update: 06/13/22_
+_Last update: 06/13/22_
 
 Unlisted server software is **most likely not supported**!
 
