@@ -1,11 +1,11 @@
 This is an example BungeeCord plugin using the api.
 
-# How to use
+## How to use
 
 Add the Sonar.jar to your project libaries and you are finished.
 > You can find Sonar on MC-Market (https://www.mc-market.org/resources/23353/)
 
-# Events
+## Custom events
 
 You can use the following events as normal BungeeCord events:
 
