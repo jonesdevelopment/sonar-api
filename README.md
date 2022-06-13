@@ -37,3 +37,5 @@ public void handle(final SonarReloadEvent event) {
   * Velocity (https://velocitypowered.com/)
 
 Unlisted server software is **most likely not supported**!
+
+Please only use versions that provide support for Minecraft **1.19 or higher**.
