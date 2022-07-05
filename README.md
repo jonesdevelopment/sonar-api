@@ -46,4 +46,4 @@ Unlisted server software is **most likely not supported**!
 
 Please only use versions that provide support for Minecraft **1.19 or higher**.
 
-ViaVersion on BungeeCord is not supported and will cause issues.
+ViaVersion and TCPShield/RealIP on BungeeCord are not supported and will cause issues.
