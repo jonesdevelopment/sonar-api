@@ -27,7 +27,7 @@ public void handle(final SonarReloadEvent event) {
 
 ## TCPShield
 
-* TCPShield support in in beta.
+* TCPShield support is currently in **beta stage**.
 
 **Important**:
 
