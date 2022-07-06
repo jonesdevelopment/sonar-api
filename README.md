@@ -27,7 +27,10 @@ public void handle(final SonarReloadEvent event) {
 
 ## TCPShield
 
+* TCPShield support in in beta.
+
 **Important**:
+
 > If you are using TCPShield, you must remove the TCPShield/RealIP plugin from your server in order for Sonar to work properly.
 > After you removed the TCPShield plugin, you need to enable the TCPShield mode in the 'tcpshield.yml'.
 > You can find this configuration file in the Sonar folder, which will be created when you start your server.
