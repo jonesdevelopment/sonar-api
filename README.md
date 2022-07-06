@@ -50,7 +50,7 @@ public void handle(final SonarReloadEvent event) {
 > Not compatible:
   * Velocity (https://velocitypowered.com/)
 
-_Last update: 06/13/22_
+_Last update: 06/07/22_
 
 Unlisted server software is **most likely not supported**!
 
