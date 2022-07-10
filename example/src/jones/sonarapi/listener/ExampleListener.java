@@ -9,7 +9,7 @@ import net.md_5.bungee.event.EventHandler;
 /**
  * @author jones
  *
- * @version 0.2
+ * @version 0.3
  */
 
 public final class ExampleListener implements Listener {

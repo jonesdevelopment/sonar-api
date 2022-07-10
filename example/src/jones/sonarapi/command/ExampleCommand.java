@@ -8,7 +8,7 @@ import net.md_5.bungee.api.plugin.Command;
 /**
  * @author jones
  *
- * @version 0.2
+ * @version 0.3
  */
 
 public final class ExampleCommand extends Command {
