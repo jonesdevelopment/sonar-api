@@ -1,5 +1,3 @@
-This is an example BungeeCord plugin using the api.
-
 ## How to use
 
 Add the Sonar.jar to your project libaries and you are finished.
