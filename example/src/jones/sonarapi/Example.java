@@ -1,7 +1,7 @@
 package jones.sonarapi;
 
 import jones.sonarapi.command.ExampleCommand;
-import jones.sonarapi.listener.SonarListener;
+import jones.sonarapi.listener.ExampleListener;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.plugin.PluginManager;
@@ -9,10 +9,10 @@ import net.md_5.bungee.api.plugin.PluginManager;
 /**
  * @author jones
  *
- * @version 0.2
+ * @version 0.3
  */
 
-public final class TestAPI extends Plugin {
+public final class Example extends Plugin {
 
     public static long lastCpsPeak, lastIpsPeak;
 
@@ -27,6 +27,6 @@ public final class TestAPI extends Plugin {
 
         pluginManager.registerCommand(this, new ExampleCommand());
 
-        pluginManager.registerListener(this, new SonarListener());
+        pluginManager.registerListener(this, new ExampleListener());
     }
 }

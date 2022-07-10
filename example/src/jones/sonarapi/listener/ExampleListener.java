@@ -1,7 +1,7 @@
 package jones.sonarapi.listener;
 
 import jones.sonar.api.event.impl.*;
-import jones.sonarapi.TestAPI;
+import jones.sonarapi.Example;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
@@ -12,7 +12,7 @@ import net.md_5.bungee.event.EventHandler;
  * @version 0.2
  */
 
-public final class SonarListener implements Listener {
+public final class ExampleListener implements Listener {
 
     /**
      *
@@ -53,7 +53,7 @@ public final class SonarListener implements Listener {
     public void handle(final SonarCPSPeakChangedEvent sonarCPSPeakChangedEvent) {
         log("[Sonar API] New connections per second peak: " + sonarCPSPeakChangedEvent.getConnectionsPerSecondPeak());
 
-        TestAPI.lastCpsPeak = sonarCPSPeakChangedEvent.getConnectionsPerSecondPeak();
+        Example.lastCpsPeak = sonarCPSPeakChangedEvent.getConnectionsPerSecondPeak();
     }
 
     /**
@@ -65,7 +65,7 @@ public final class SonarListener implements Listener {
     public void handle(final SonarIPSPeakChangedEvent sonarIPSPeakChangedEvent) {
         log("[Sonar API] New ips per second peak: " + sonarIPSPeakChangedEvent.getIpsPerSecondPeak());
 
-        TestAPI.lastCpsPeak = sonarIPSPeakChangedEvent.getIpsPerSecondPeak();
+        Example.lastCpsPeak = sonarIPSPeakChangedEvent.getIpsPerSecondPeak();
     }
 
     /**

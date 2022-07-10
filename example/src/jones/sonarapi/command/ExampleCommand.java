@@ -1,6 +1,6 @@
 package jones.sonarapi.command;
 
-import jones.sonarapi.TestAPI;
+import jones.sonarapi.Example;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.plugin.Command;
@@ -23,7 +23,7 @@ public final class ExampleCommand extends Command {
 
     @Override
     public void execute(final CommandSender commandSender, final String[] strings) {
-        commandSender.sendMessage(new TextComponent("Last connections per second peak: " + TestAPI.lastCpsPeak));
-        commandSender.sendMessage(new TextComponent("Last ip addresses per second peak: " + TestAPI.lastIpsPeak));
+        commandSender.sendMessage(new TextComponent("Last connections per second peak: " + Example.lastCpsPeak));
+        commandSender.sendMessage(new TextComponent("Last ip addresses per second peak: " + Example.lastIpsPeak));
     }
 }

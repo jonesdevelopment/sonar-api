@@ -1,4 +1,0 @@
-name: SonarAPI
-version: '0.2'
-main: jones.sonarapi.TestAPI
-author: 'jonesdev.xyz'
