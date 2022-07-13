@@ -5,7 +5,7 @@ Add the Sonar.jar to your project libaries and you are finished.
 
 ## Wiki
 
-You can look into the Sonar wiki page if you are interested in reading more about Sonar.
+Feel free to check out the wiki page if you're interested in learning more about Sonar.
 > https://github.com/jonesdevelopment/sonar-api/wiki/
 
 ## Custom events
