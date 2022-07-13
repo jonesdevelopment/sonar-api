@@ -3,6 +3,11 @@
 Add the Sonar.jar to your project libaries and you are finished.
 > You can find Sonar on MC-Market (https://www.mc-market.org/resources/23353/)
 
+## Wiki
+
+You can look into the Sonar wiki page if you are interested in reading more about Sonar.
+> https://github.com/jonesdevelopment/sonar-api/wiki/
+
 ## Custom events
 
 You can use the following events as normal BungeeCord events:
