@@ -21,7 +21,7 @@ public final class ExampleListener implements Listener {
 
     @EventHandler
     public void handle(final SonarReloadEvent sonarReloadEvent) {
-        log("[Sonar API] Sonar reloaded");
+        log("[Sonar API] Sonar reloaded in " + sonarReloadEvent.getTimeTaken() + " milliseconds. (Timestamp: " + sonarReloadEvent.getTimeStamp() + ")");
     }
 
     /**
