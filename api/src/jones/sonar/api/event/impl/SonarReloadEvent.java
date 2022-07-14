@@ -17,6 +17,7 @@ public final class SonarReloadEvent extends Event implements EventAPI {
     public long getTimeStamp() {
         return timeStamp;
     }
+
     public long getTimeTaken() {
         return timeTaken;
     }

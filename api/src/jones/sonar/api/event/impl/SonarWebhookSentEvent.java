@@ -17,5 +17,4 @@ public final class SonarWebhookSentEvent extends Event implements EventAPI {
         return webhookUrl;
     }
 
-
 }
