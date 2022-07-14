@@ -21,7 +21,7 @@ public final class ExampleListener implements Listener {
 
     @EventHandler
     public void handle(final SonarReloadEvent sonarReloadEvent) {
-        log("[Sonar API] Sonar reloaded in " + sonarReloadEvent.getTimeTaken() + " milliseconds. (Timestamp: " + sonarReloadEvent.getTimeStamp() + ")");
+        log("Sonar reloaded in " + sonarReloadEvent.getTimeTaken() + " milliseconds. (Timestamp: " + sonarReloadEvent.getTimeStamp() + ")");
     }
 
     /**
@@ -31,7 +31,7 @@ public final class ExampleListener implements Listener {
 
     @EventHandler
     public void handle(final SonarPeakResetEvent sonarPeakResetEvent) {
-        log("[Sonar API] Peak reset");
+        log("Peak reset");
     }
 
     /**
@@ -41,7 +41,7 @@ public final class ExampleListener implements Listener {
 
     @EventHandler
     public void handle(final SonarWebhookSentEvent sonarWebhookSentEvent) {
-        log("[Sonar API] Send webhook to " + sonarWebhookSentEvent.getWebhookUrl());
+        log("Send webhook to " + sonarWebhookSentEvent.getWebhookUrl());
     }
 
     /**
@@ -51,7 +51,7 @@ public final class ExampleListener implements Listener {
 
     @EventHandler
     public void handle(final SonarCPSPeakChangedEvent sonarCPSPeakChangedEvent) {
-        log("[Sonar API] New connections per second peak: " + sonarCPSPeakChangedEvent.getConnectionsPerSecondPeak());
+        log("New connections per second peak: " + sonarCPSPeakChangedEvent.getConnectionsPerSecondPeak());
 
         Example.lastCpsPeak = sonarCPSPeakChangedEvent.getConnectionsPerSecondPeak();
     }
@@ -63,7 +63,7 @@ public final class ExampleListener implements Listener {
 
     @EventHandler
     public void handle(final SonarIPSPeakChangedEvent sonarIPSPeakChangedEvent) {
-        log("[Sonar API] New ips per second peak: " + sonarIPSPeakChangedEvent.getIpsPerSecondPeak());
+        log("New ips per second peak: " + sonarIPSPeakChangedEvent.getIpsPerSecondPeak());
 
         Example.lastCpsPeak = sonarIPSPeakChangedEvent.getIpsPerSecondPeak();
     }
@@ -75,7 +75,7 @@ public final class ExampleListener implements Listener {
 
     @EventHandler
     public void handle(final SonarBlacklistClearEvent blacklistClearEvent) {
-        log("[Sonar API] Blacklist cleared");
+        log("Blacklist cleared");
     }
 
     /**
@@ -85,6 +85,6 @@ public final class ExampleListener implements Listener {
      */
 
     private void log(final String toLog) {
-        ProxyServer.getInstance().getLogger().info(toLog);
+        ProxyServer.getInstance().getLogger().info("[Sonar API] " + toLog);
     }
 }

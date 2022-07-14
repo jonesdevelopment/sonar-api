@@ -12,7 +12,7 @@ public final class SonarWebhookSentEvent extends Event implements EventAPI {
         this.webhookUrl = webhookUrl;
     }
 
-    /* getters */
+    /* getter */
     public String getWebhookUrl() {
         return webhookUrl;
     }
