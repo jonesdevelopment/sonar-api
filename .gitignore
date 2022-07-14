@@ -1,5 +1,6 @@
 out/
 target/
+.github/
 .idea/
 *.class
 *.iml
