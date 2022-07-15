@@ -43,26 +43,6 @@ public void handle(final SonarReloadEvent event) {
 Feel free to check out the wiki page if you're interested in learning more about Sonar.
 > https://github.com/jonesdevelopment/sonar-api/wiki/
 
-## Custom events
-
-You can use the following events as normal BungeeCord events:
-
-- SonarReloadEvent
-- SonarPeakResetEvent
-- SonarWebhookSentEvent
-- SonarCPSPeakChangedEvent
-- SonarIPSPeakChangedEvent
-- SonarBlacklistClearEvent
-
-## Example event
-
-```Java
-@EventHandler
-public void handle(final SonarReloadEvent event) {
-    // do stuff
-}
-```
-
 ## TCPShield
 
 * TCPShield support is currently in **beta stage**.
