@@ -4,7 +4,7 @@
 **Using the Sonar Anti Bot API**
 
 1. Buy and download Sonar from MC-Market [here](https://www.mc-market.org/resources/23353/).
-2. Add the `Sonar.jar` you downloaded to your project libraries.
+2. Add the `Sonar.jar` you've downloaded to your project libraries.
 3. Register a BungeeCord event listener in your plugin:
     ```Java
     @Override
