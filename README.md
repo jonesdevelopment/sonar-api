@@ -55,20 +55,20 @@ Feel free to check out the wiki page if you're interested in learning more about
 
 ## Compatibilities
 
-> Tested:
+**Tested:**
   * Waterfall (https://papermc.io/downloads#Waterfall)
   * FlameCord (https://github.com/2LStudios-MC/FlameCord)
   * HexaCord (https://github.com/HexagonMC/BungeeCord
   * BungeeCord (https://ci.md-5.net/job/BungeeCord/)
 
-> Not tested:
+**Not tested:**
   * XCord (https://www.mc-market.org/resources/16843/)
   * Aegis (https://mc-protection.eu/products)
 
-> Not compatible:
+**Not compatible:**
   * Velocity (https://velocitypowered.com/)
 
-_Last update: 06/07/22_
+_Last update: 16/07/22_
 
 Unlisted server software is **most likely not supported**!
 
