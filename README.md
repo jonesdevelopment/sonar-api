@@ -1,7 +1,42 @@
-## How to use
 
-Add the Sonar.jar to your project libaries and you are finished.
-> You can find Sonar on MC-Market (https://www.mc-market.org/resources/23353/)
+## Sonar API
+
+**Using the Sonar Anti Bot API**
+
+1. Buy and download Sonar from MC-Market [here](https://www.mc-market.org/resources/23353/).
+2. Add the `Sonar.jar` you downloaded to your project libraries.
+3. Register a BungeeCord event listener in your plugin:
+    ```Java
+    @Override
+    public void onEnable() {
+        // [...]
+        ProxyServer.getPluginManager().registerListener(this, new YourListener());
+        // [...]
+    }
+    ```
+
+**You can use the following events as normal BungeeCord events:**
+
+* SonarReloadEvent
+    * `timeStamp` - Time stamp of the reload (`System.currentTimeMillis()`)
+    * `timeTaken` - Time taken (in milliseconds) for Sonar to reload all modules
+* SonarPeakResetEvent
+* SonarWebhookSentEvent
+    * `webhookUrl` - URL of the webhook the alert has been sent to
+* SonarCPSPeakChangedEvent
+    * `connectionsPerSecondPeak` - Value of the new connections per second peak
+* SonarIPSPeakChangedEvent
+    * `ipsPerSecondPeak` - Value of the new ip addresses per second peak
+* SonarBlacklistClearEvent
+
+**Example implementation**
+
+```Java
+@EventHandler
+public void handle(final SonarReloadEvent event) {
+    // do stuff
+}
+```
 
 ## Wiki
 
