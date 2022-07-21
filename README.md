@@ -34,7 +34,7 @@
 ```Java
 @EventHandler
 public void handle(final SonarReloadEvent event) {
-    // do stuff
+    // [...]
 }
 ```
 
