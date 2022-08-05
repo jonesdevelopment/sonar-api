@@ -72,6 +72,6 @@ _Last update: 16/07/22_
 
 Unlisted server software is **most likely not supported**!
 
-Please only use versions that provide support for Minecraft **1.19 or higher**.
+Please only use versions that provide support for Minecraft **1.19.1 or higher**.
 
 ViaVersion and Geyser on BungeeCord are not supported and will cause issues!
