@@ -32,7 +32,9 @@
 **Your class must implement the BungeeCord Listener**
 
 ```Java
-public class YourListener implements Listener {
+import net.md_5.bungee.api.plugin.Listener;
+
+public final class YourListener implements Listener {
     // [...]
 }
 ```
