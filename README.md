@@ -18,7 +18,8 @@
 **You can use the following events as normal BungeeCord events:**
 
 * SonarReloadEvent
-    * `timeStamp` - Time stamp of the reload (`System.currentTimeMillis()`)
+    * `startTimeStamp` - Time stamp before the reload (`System.currentTimeMillis()`)
+    * `endTimeStamp` - Time stamp after the reload (`System.currentTimeMillis()`)
     * `timeTaken` - Time taken (in milliseconds) for Sonar to reload all modules
 * SonarPeakResetEvent
 * SonarWebhookSentEvent
@@ -28,6 +29,16 @@
 * SonarIPSPeakChangedEvent
     * `ipsPerSecondPeak` - Value of the new ip addresses per second peak
 * SonarBlacklistClearEvent
+
+**Your class must implement the BungeeCord Listener**
+
+```Java
+import net.md_5.bungee.api.plugin.Listener;
+
+public final class YourListener implements Listener {
+    // [...]
+}
+```
 
 **Example implementation**
 
@@ -72,6 +83,6 @@ _Last update: 16/07/22_
 
 Unlisted server software is **most likely not supported**!
 
-Please only use versions that provide support for Minecraft **1.19 or higher**.
+Please only use versions that provide support for Minecraft **1.19.1 or higher**.
 
 ViaVersion and Geyser on BungeeCord are not supported and will cause issues!
