@@ -5,17 +5,22 @@ import net.md_5.bungee.api.plugin.Event;
 
 public final class SonarReloadEvent extends Event implements EventAPI {
 
-    private final long timeStamp, timeTaken;
+    private final long startTimeStamp, endTimeStamp, timeTaken;
 
     /* initialization */
-    public SonarReloadEvent(final long timeStamp, final long timeTaken) {
-        this.timeStamp = timeStamp;
+    public SonarReloadEvent(final long startTimeStamp, final long endTimeStamp, final long timeTaken) {
+        this.startTimeStamp = startTimeStamp;
+        this.endTimeStamp = endTimeStamp;
         this.timeTaken = timeTaken;
     }
 
     /* getters */
-    public long getTimeStamp() {
-        return timeStamp;
+    public long getStartTimeStamp() {
+        return startTimeStamp;
+    }
+
+    public long getEndTimeStamp() {
+        return endTimeStamp;
     }
 
     public long getTimeTaken() {

@@ -24,11 +24,6 @@ import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.plugin.PluginManager;
 
-/**
- * @author jones
- *
- * @version 0.3
- */
 public final class Example extends Plugin {
 
     public static long lastCpsPeak, lastIpsPeak;

@@ -24,11 +24,6 @@ import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 
-/**
- * @author jones
- *
- * @version 0.3
- */
 public final class ExampleListener implements Listener {
 
     /**
@@ -38,7 +33,8 @@ public final class ExampleListener implements Listener {
 
     @EventHandler
     public void handle(final SonarReloadEvent sonarReloadEvent) {
-        log("Sonar reloaded in " + sonarReloadEvent.getTimeTaken() + " milliseconds. (Timestamp: " + sonarReloadEvent.getTimeStamp() + ")");
+        log("Sonar reloaded in " + sonarReloadEvent.getTimeTaken() + " milliseconds.");
+        log("Start timestamp: " + sonarReloadEvent.getStartTimeStamp() + ", end timestamp: " + sonarReloadEvent.getEndTimeStamp());
     }
 
     /**

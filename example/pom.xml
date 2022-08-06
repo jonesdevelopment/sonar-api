@@ -6,7 +6,7 @@
 
     <groupId>jones.sonarapi</groupId>
     <artifactId>jones.sonarapi</artifactId>
-    <version>0.3</version>
+    <version>0.4</version>
     <packaging>jar</packaging>
 
     <name>Sonar-API</name>
