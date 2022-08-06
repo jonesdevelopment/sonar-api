@@ -18,7 +18,8 @@
 **You can use the following events as normal BungeeCord events:**
 
 * SonarReloadEvent
-    * `timeStamp` - Time stamp of the reload (`System.currentTimeMillis()`)
+    * `startTimeStamp` - Time stamp before the reload (`System.currentTimeMillis()`)
+    * `endTimeStamp` - Time stamp after the reload (`System.currentTimeMillis()`)
     * `timeTaken` - Time taken (in milliseconds) for Sonar to reload all modules
 * SonarPeakResetEvent
 * SonarWebhookSentEvent
