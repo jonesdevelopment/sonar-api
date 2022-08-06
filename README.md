@@ -29,6 +29,14 @@
     * `ipsPerSecondPeak` - Value of the new ip addresses per second peak
 * SonarBlacklistClearEvent
 
+**Your class must implement the BungeeCord Listener**
+
+```Java
+public class YourListener implements Listener {
+    // [...]
+}
+```
+
 **Example implementation**
 
 ```Java
