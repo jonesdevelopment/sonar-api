@@ -79,7 +79,7 @@ Feel free to check out the wiki page if you're interested in learning more about
 **Not compatible:**
   * Velocity (https://velocitypowered.com/)
 
-_Last update: 16/07/22_
+_Last update: 8/08/22_
 
 Unlisted server software is **most likely not supported**!
 
