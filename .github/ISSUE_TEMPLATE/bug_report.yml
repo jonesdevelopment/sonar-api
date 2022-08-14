@@ -11,7 +11,10 @@ body:
     id: general
     attributes:
       label: "General information"
-      description: "Please provide some information about what happened."
+      description: |
+        Please provide some information about what happened.
+      	Is there a known way the error/bug can be reproduced?
+        Please provide a short list of steps you need to do to reproduce the bug.
       placeholder: |
         1. ...
         2. ...
