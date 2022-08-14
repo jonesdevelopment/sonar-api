@@ -23,6 +23,17 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional information"
+      description: |
+        Is there any additional information you want to provide?
+      placeholder: |
+        - ...
+    validations:
+      required: false
+
   - type: dropdown
     id: java_version
     attributes:
