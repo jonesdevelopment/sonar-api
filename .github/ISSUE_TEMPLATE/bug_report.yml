@@ -5,6 +5,9 @@ about: "Report bugs to improve plugin stability"
 title: "Bug report"
 labels: ''
 
+assignees:
+  - jonesdevelopment
+
 body:
   - type: textarea
     attributes:
@@ -21,8 +24,8 @@ body:
     attributes:
       label: "Reproducing the issue"
       description: |
-      	Is there a known way the error/bug can be reproduced?
-        Please provide a short list of steps you need to do to reproduce the bug.
+      	"Is there a known way the error/bug can be reproduced?"
+        "Please provide a short list of steps you need to do to reproduce the bug."
     validations:
       required: true
 
