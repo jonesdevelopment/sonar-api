@@ -2,8 +2,9 @@
 
 ## Supported Versions 
 
-Only the latest version will receive security updates.
-Old or vulnerable version will be deleted from BuiltByBit.
+Only the latest version will receive (security) updates.
+
+Old or vulnerable versions will be deleted from BuiltByBit.
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -12,5 +13,5 @@ Old or vulnerable version will be deleted from BuiltByBit.
 
 ## Reporting a Vulnerability
 
-Please open a `Bug report` issue here:
+If you find an issue or a vulnerability, please open a `Bug report` issue here:
 * https://github.com/jonesdevelopment/sonar-api/issues
