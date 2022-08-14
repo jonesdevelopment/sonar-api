@@ -1,26 +1,25 @@
 
 ---
-name: Bug report
-about: Report bugs to improve plugin stability
-title: Bug report
+name: "Bug report"
+about: "Report bugs to improve plugin stability"
+title: "Bug report"
 labels: ''
 
 body:
   - type: textarea
     attributes:
-      label: General information
-      description: |
-        Please provide some information about what happened.
+      label: "General information"
+      description: "Please provide some information about what happened."
       placeholder: |
-        Step 1. Do this
-        Step 2. Then do this
-        Step 3. etc...
+        1. ...
+        2. ...
+        3. ...
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Reproducing the issue
+      label: "Reproducing the issue"
       description: |
       	Is there a known way the error/bug can be reproduced?
         Please provide a short list of steps you need to do to reproduce the bug.
@@ -29,7 +28,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Proxy version
+      label: "Proxy version"
       description: |
       	Which BungeeCord version are you using? Are you using a fork?
         Run `/bungee` on your server to check.
@@ -38,7 +37,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Screenshots/Videos
+      label: "Screenshots/Videos"
       description: |
       	Can you provide screenshots of the error message (if given)?
     validations:
