@@ -8,6 +8,7 @@ assignees:
 
 body:
   - type: textarea
+    id: general
     attributes:
       label: "General information"
       description: "Please provide some information about what happened."
@@ -15,5 +16,23 @@ body:
         1. ...
         2. ...
         3. ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: java_version
+    attributes:
+      label: "Java version"
+      description: "Please select the current version of Java your server is running."
+      multiple: false
+      options:
+        - Java 7 or under
+        - Java 8
+        - Java 9
+        - Java 10
+        - Java 11
+        - Java 16
+        - Java 17
+        - Java 18 or above
     validations:
       required: true
