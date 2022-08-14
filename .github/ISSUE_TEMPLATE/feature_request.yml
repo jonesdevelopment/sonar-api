@@ -49,8 +49,8 @@ body:
       label: "Can this feature be found in other existing plugins?"
       multiple: false
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
         - Unsure
     validations:
       required: true
