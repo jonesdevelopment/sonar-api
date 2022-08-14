@@ -36,3 +36,29 @@ body:
         - Java 18 or above
     validations:
       required: true
+
+  - type: dropdown
+    id: proxy_type
+    attributes:
+      label: "Server type"
+      description: "Please select the current proxy type you're using."
+      multiple: false
+      options:
+        - BungeeCord
+        - Waterfall
+        - FlameCord
+        - HexaCord
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: proxy_version
+    attributes:
+      label: "Server version"
+      description: "Please enter the version of the proxy you're using."
+      placeholder: |
+        Waterfall 1.19-500 (papermc.io)
+    validations:
+      required: true
+
