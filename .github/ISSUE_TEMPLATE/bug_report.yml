@@ -37,6 +37,7 @@ body:
         - Java 16
         - Java 17
         - Java 18 or above
+        - Other
     validations:
       required: true
 
