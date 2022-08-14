@@ -3,21 +3,41 @@ name: Bug report
 about: Report bugs to improve plugin stability
 title: Bug report
 labels: ''
-assignees: ''
+body:
+  - type: textarea
+    attributes:
+      label: General information
+      description: |
+        Please provide some information about what happened.
+      placeholder: |
+        Step 1. Do this
+        Step 2. Then do this
+        Step 3. etc...
+    validations:
+      required: true
 
----
+  - type: textarea
+    attributes:
+      label: Reproducing the issue
+      description: |
+      	Is there a known way the error/bug can be reproduced?
+        Please provide a short list of steps you need to do to reproduce the bug.
+    validations:
+      required: true
 
-Please provide some information about what happened.
-...
+  - type: textarea
+    attributes:
+      label: Proxy version
+      description: |
+      	Which BungeeCord version are you using? Are you using a fork?
+        Run `/bungee` on your server to check.
+    validations:
+      required: true
 
-Is there a known way the error/bug can be reproduced?
-...
-
-Which BungeeCord version are you using? Are you using a fork?
-...
-
-Can you provide screenshots of the error message (if given)?
-...
-
-Is there any additional information you can provide?
-...
+  - type: textarea
+    attributes:
+      label: Screenshots/Videos
+      description: |
+      	Can you provide screenshots of the error message (if given)?
+    validations:
+      required: false
