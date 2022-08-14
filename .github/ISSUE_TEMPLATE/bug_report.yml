@@ -30,8 +30,7 @@ body:
       description: "Please select the current version of Java your server is running."
       multiple: false
       options:
-        - Java 7 or under
-        - Java 8
+        - Java 8 or under
         - Java 9
         - Java 10
         - Java 11
