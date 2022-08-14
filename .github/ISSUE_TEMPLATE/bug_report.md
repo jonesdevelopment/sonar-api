@@ -3,6 +3,9 @@ name: Bug report
 about: Report bugs to improve plugin stability
 title: Bug report
 labels: ''
+
+---
+
 body:
   - type: textarea
     attributes:
