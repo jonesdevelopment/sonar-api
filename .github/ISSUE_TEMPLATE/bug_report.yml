@@ -1,9 +1,7 @@
-
----
 name: Bug report
 description: Report bugs to improve plugin stability
 title: "Bug report"
-labels: ''
+labels: ["bug"]
 
 assignees:
   - jonesdevelopment
