@@ -49,21 +49,6 @@ public void handle(final SonarReloadEvent event) {
 }
 ```
 
-## Wiki
-
-Feel free to check out the wiki page if you're interested in learning more about Sonar.
-> https://github.com/jonesdevelopment/sonar-api/wiki/
-
-## TCPShield
-
-* TCPShield support is currently in **beta stage**.
-
-**Important**:
-
-> If you are using TCPShield, you must remove the TCPShield/RealIP plugin from your server in order for Sonar to work properly.
-> After you removed the TCPShield plugin, you need to enable the TCPShield mode in the 'tcpshield.yml'.
-> You can find this configuration file in the Sonar folder, which will be created when you start your server.
-
 ## Compatibilities
 
 **Tested:**
@@ -77,9 +62,9 @@ Feel free to check out the wiki page if you're interested in learning more about
   * Aegis (https://mc-protection.eu/products)
 
 **Not compatible:**
-  * Velocity (https://velocitypowered.com/)
+  * Velocity (https://velocitypowered.com/) [Support soon]
 
-_Last update: 8/08/22_
+_Last update: 17/09/22_
 
 Unlisted server software is **most likely not supported**!
 
