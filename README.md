@@ -1,4 +1,4 @@
-# ⚡ Sonar Antibot API
+# :wrench: Sonar Antibot API
 ### This github repository is for issues and the Sonar Antibot API
 
 ## Using the API
@@ -9,7 +9,7 @@
 
 ## API functions and features
 
-### Events
+### ⚡ Events
 * jones.sonar.api.event.bungee.**SonarAttackDetectedEvent** **›** *Called when Sonar detected a bot attack*
     * **getConnectionsPerSecond()** **-** *Returns the number of connections per second*
     * **getIpAddressesPerSecond()** **-** *Returns the number of ip addresses per second*
@@ -38,7 +38,7 @@
 * jones.sonar.api.event.bungee.**SonarWebhookSentEvent**    **›** *Called when Sonar sent a Discord Webhook*
     * **getWebhookUrl()** **-** *Returns the url of the Discord Webhook*
 
-### General API functions
+### :pencil2: General API functions
 
 #### Getting a players bot level
 
