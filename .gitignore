@@ -1,8 +1,0 @@
-out/
-target/
-.github/
-.idea/
-*.class
-*.iml
-*.md
-*.jar
