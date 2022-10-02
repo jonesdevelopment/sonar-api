@@ -1,73 +1,76 @@
+# ⚡ Sonar Antibot API
+### This github repository is for issues and the Sonar Antibot API
 
-## Sonar API
+## Using the API
 
-**Using the Sonar Anti Bot API**
+* Download the `Sonar.jar` from [BuiltByBit](https://builtbybit.com/resources/sonar-anti-bot-blocking-50k-bots-sec.23353).
+* Once that is finished, load the `Sonar.jar` as a project library in your IDE.
+* You're finished. Now you can use the Sonar Antibot API.
 
-1. Buy and download Sonar from BuiltByBit (MC-Market) [here](https://www.builtbybit.com/resources/23353/).
-2. Add the `Sonar.jar` you've downloaded to your project libraries.
-3. Register a BungeeCord event listener in your plugin:
-    ```Java
-    @Override
-    public void onEnable() {
-        // [...]
-        ProxyServer.getPluginManager().registerListener(this, new YourListener());
-        // [...]
-    }
-    ```
+## API functions and features
 
-**You can use the following events as normal BungeeCord events:**
+### Events
+* jones.sonar.api.event.bungee.**SonarAttackDetectedEvent** **›** *Called when Sonar detected a bot attack*
+    * **getConnectionsPerSecond()** **-** *Returns the number of connections per second*
+    * **getIpAddressesPerSecond()** **-** *Returns the number of ip addresses per second*
+    * **getLoginsPerSecond()** **-** *Returns the number of login/joins per second*
+    * **getPingsPerSecond()** **-** *Returns the number of server list pings per second*
+    * **getEncryptionsPerSecond()** **-** *Returns the number of encryptions (premium players) per second*
 
-* SonarReloadEvent
-    * `startTimeStamp` - Time stamp before the reload (`System.currentTimeMillis()`)
-    * `endTimeStamp` - Time stamp after the reload (`System.currentTimeMillis()`)
-    * `timeTaken` - Time taken (in milliseconds) for Sonar to reload all modules
-* SonarPeakResetEvent
-* SonarWebhookSentEvent
-    * `webhookUrl` - URL of the webhook the alert has been sent to
-* SonarCPSPeakChangedEvent
-    * `connectionsPerSecondPeak` - Value of the new connections per second peak
-* SonarIPSPeakChangedEvent
-    * `ipsPerSecondPeak` - Value of the new ip addresses per second peak
-* SonarBlacklistClearEvent
+* jones.sonar.api.event.bungee.**SonarBlacklistClearEvent** **›** *Called when the blacklist is being cleared*
+    * **getBlacklistSize()** **-** *Returns the number of blacklisted ip addresses before the clear*
 
-**Your class must implement the BungeeCord Listener**
+* jones.sonar.api.event.bungee.**SonarWhitelistClearEvent** **›** *Called when the whitelist is being cleared*
+    * **getWhitelistSize()** **-** *Returns the number of whitelisted ip addresses before the clear*
 
-```Java
-import net.md_5.bungee.api.plugin.Listener;
+* jones.sonar.api.event.bungee.**SonarPeakChangedEvent**    **›** *Called when the cps or ips peak changed*
+    * **getPeakType()** **-** *Returns the type of the peak (can either be IP_ADDRESSES_PER_SECOND or CONNECTIONS_PER_SECOND)*
+    * **getNewPeak()** **-** *Returns the number of the new peak of ip addresses per second or connections per second*
 
-public final class YourListener implements Listener {
-    // [...]
-}
-```
+* jones.sonar.api.event.bungee.**SonarPeakResetEvent**      **›** *Called when the cps or ips peak is reset*
+    * **getPeakType()** **-** *Returns the type of the peak (can either be IP_ADDRESSES_PER_SECOND or CONNECTIONS_PER_SECOND)*
 
-**Example implementation**
+* jones.sonar.api.event.bungee.**SonarReloadEvent**         **›** *Called when the plugin is being reloaded*
+    * **getStartTimeStamp()** **-** *Returns the current time in milliseconds before the reload*
+    * **getEndTimeStamp()** **-** *Returns the current time in milliseconds after the reload*
+    * **getTimeTaken()** **-** *Returns the time (in milliseconds) Sonar took to reload*
 
-```Java
-@EventHandler
-public void handle(final SonarReloadEvent event) {
-    // [...]
-}
-```
+* jones.sonar.api.event.bungee.**SonarWebhookSentEvent**    **›** *Called when Sonar sent a Discord Webhook*
+    * **getWebhookUrl()** **-** *Returns the url of the Discord Webhook*
 
-## Compatibilities
+### General API functions
 
-**Tested:**
-  * Waterfall (https://papermc.io/downloads#Waterfall)
-  * FlameCord (https://github.com/2LStudios-MC/FlameCord)
-  * HexaCord (https://github.com/HexagonMC/BungeeCord
-  * BungeeCord (https://ci.md-5.net/job/BungeeCord/)
+#### Getting a players bot level
 
-**Not tested:**
-  * XCord (https://www.mc-market.org/resources/16843/)
-  * Aegis (https://mc-protection.eu/products)
+* jones.sonar.api.SonarAPI.getPlayerBotLevel(**InetAddress**)
+* jones.sonar.api.SonarAPI.getPlayerBotLevel(**SocketAddress**)
+* jones.sonar.api.SonarAPI.getPlayerBotLevel(**ProxiedPlayer**)
 
-**Not compatible:**
-  * Velocity (https://velocitypowered.com/) [Support soon]
+#### Checking if a player is blacklisted
 
-_Last update: 17/09/22_
+* jones.sonar.api.SonarAPI.isBlacklisted(**InetAddress**)
+* jones.sonar.api.SonarAPI.isBlacklisted(**SocketAddress**)
 
-Unlisted server software is **most likely not supported**!
+#### Checking if a player is whitelisted
 
-Please only use versions that provide support for Minecraft **1.19.1 or higher**.
+* jones.sonar.api.SonarAPI.isWhitelisted(**InetAddress**)
+* jones.sonar.api.SonarAPI.isWhitelisted(**SocketAddress**)
+* jones.sonar.api.SonarAPI.isWhitelisted(**ProxiedPlayer**)
 
-ViaVersion and Geyser on BungeeCord are not supported and will cause issues!
+#### Add a player to the blacklist
+
+* jones.sonar.api.SonarAPI.addToBlacklist(**InetAddress**)
+* jones.sonar.api.SonarAPI.addToBlacklist(**SocketAddress**)
+
+#### Add a player to the whitelist
+
+* jones.sonar.api.SonarAPI.addToWhitelist(**InetAddress**)
+* jones.sonar.api.SonarAPI.addToWhitelist(**SocketAddress**)
+
+#### Get list of blacklisted ip addresses
+
+* jones.sonar.api.SonarAPI.getBlacklistedIPAddresses()
+
+#### Get list of whitelisted ip addresses
+
+* jones.sonar.api.SonarAPI.getWhitelistedIPAddresses()
