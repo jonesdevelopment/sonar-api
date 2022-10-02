@@ -1,7 +1,0 @@
-name: SonarAPI
-version: ${project.version}
-main: jones.sonarapi.Example
-author: 'jonesdev.xyz'
-description: 'Example plugin that uses the Sonar Anti Bot API'
-depend:
-  - Sonar
