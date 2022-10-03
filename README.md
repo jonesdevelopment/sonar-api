@@ -75,3 +75,7 @@
 #### › Get list of whitelisted ip addresses
 
 * jones.sonar.api.SonarAPI.getWhitelistedIPAddresses()
+
+#### › Check if the server is currently under attack
+
+* jones.sonar.api.SonarAPI.isUnderAttack()
