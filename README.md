@@ -40,37 +40,38 @@
 
 ### :pencil2: General API functions
 
-#### Getting a players bot level
+#### › Getting a players bot level
+*The bot level is sort of a trust factor level Sonar uses to determine how it should handle players*
 
 * jones.sonar.api.SonarAPI.getPlayerBotLevel(**InetAddress**)
 * jones.sonar.api.SonarAPI.getPlayerBotLevel(**SocketAddress**)
 * jones.sonar.api.SonarAPI.getPlayerBotLevel(**ProxiedPlayer**)
 
-#### Checking if a player is blacklisted
+#### › Checking if a player is blacklisted
 
 * jones.sonar.api.SonarAPI.isBlacklisted(**InetAddress**)
 * jones.sonar.api.SonarAPI.isBlacklisted(**SocketAddress**)
 
-#### Checking if a player is whitelisted
+#### › Checking if a player is whitelisted
 
 * jones.sonar.api.SonarAPI.isWhitelisted(**InetAddress**)
 * jones.sonar.api.SonarAPI.isWhitelisted(**SocketAddress**)
 * jones.sonar.api.SonarAPI.isWhitelisted(**ProxiedPlayer**)
 
-#### Add a player to the blacklist
+#### › Add a player to the blacklist
 
 * jones.sonar.api.SonarAPI.addToBlacklist(**InetAddress**)
 * jones.sonar.api.SonarAPI.addToBlacklist(**SocketAddress**)
 
-#### Add a player to the whitelist
+#### › Add a player to the whitelist
 
 * jones.sonar.api.SonarAPI.addToWhitelist(**InetAddress**)
 * jones.sonar.api.SonarAPI.addToWhitelist(**SocketAddress**)
 
-#### Get list of blacklisted ip addresses
+#### › Get list of blacklisted ip addresses
 
 * jones.sonar.api.SonarAPI.getBlacklistedIPAddresses()
 
-#### Get list of whitelisted ip addresses
+#### › Get list of whitelisted ip addresses
 
 * jones.sonar.api.SonarAPI.getWhitelistedIPAddresses()
