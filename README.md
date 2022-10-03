@@ -3,7 +3,7 @@
 
 ## Using the API
 
-* Download the `Sonar.jar` from [BuiltByBit](https://builtbybit.com/resources/sonar-anti-bot-blocking-50k-bots-sec.23353).
+* Download the `Sonar.jar` from [BuiltByBit](https://builtbybit.com/resources/23353).
 * Once that is finished, load the `Sonar.jar` as a project library in your IDE.
 * You're finished. Now you can use the Sonar Antibot API.
 
